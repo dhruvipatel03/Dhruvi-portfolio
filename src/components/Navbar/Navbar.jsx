@@ -38,7 +38,7 @@ export const Navbar = () => {
 
       {/* Contact Me Button on the Right */}
       <a href="mailto:myemail@email.com" className={styles.contactBtn}>
-        Contact Me
+        Contact Dhru 
       </a>
     </div>
   );
