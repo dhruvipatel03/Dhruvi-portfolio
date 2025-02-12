@@ -1,0 +1,116 @@
+@import "../../vars.css";
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px 30px;
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+}
+/* Logo on the Left */
+.title img {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile Menu Button (Hidden by Default) */
+.menuBtn {
+    display: none;
+    cursor: pointer;
+}
+
+.menuBtn img {
+    width: 30px;
+    height: auto;
+}
+
+/* Navigation Links - Centered */
+.menuItems {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.menuItems li {
+    display: inline;
+}
+
+.menuItems a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menuItems a:hover {
+    color: #ccc;
+}
+
+/* Contact Me Button on the Right */
+.contactBtn {
+    background-color: beige;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contactBtn:hover {
+    background-color: #ddd;
+}
+
+/* Mobile View */
+@media screen and (max-width: 830px) {
+    .menuBtn {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menuOpen {
+        display: flex;
+        z-index: 2;
+    }
+
+    .menuItems a {
+        padding: 15px;
+        display: block;
+    }
+
+    .contactBtn {
+        display: block;
+        margin: 15px auto 0;
+        text-align: center;
+        width: fit-content;
+        position: relative; 
+        z-index: 20; 
+    }
+}

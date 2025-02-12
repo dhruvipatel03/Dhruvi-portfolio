@@ -1,0 +1,28 @@
+[
+    {
+      "role": "Web developer",
+      "organisation": "Elsner technology",
+      "startDate": "Jan, 2025",
+      "endDate": "Present",
+      "experiences": ["responsive e-commerce website with attractive visuals", "Reduced load times by 40%"]
+     
+    },
+    {
+      "role": "Web Designer",
+      "organisation": "Elsner technology",
+      "startDate": "May, 2022",
+      "endDate": "June, 2022",
+      "experiences": ["Created interactive animations using CSS", "Designed a modern, responsive website"]
+      
+    },
+    {
+      "role": "App developer",
+      "organisation": "IITE",
+      "startDate": "Dec, 2021",
+      "endDate": "Jan, 2021 ",
+      "experiences": [
+        "WDeveloped a cross-platform mobile app",
+        "Real-time notification"
+      ]
+    }
+  ]

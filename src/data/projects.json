@@ -1,0 +1,26 @@
+[
+    {
+      "title": "trainer-recommendation-system",
+      "imageSrc": "projects/project.png",
+      "description": "A system that helps students find and book trainers based on availability, skills, and reviews.",
+      "skills": ["React", "MongoDB", "Express", "Node.js"],
+      "demo": "https://trainer-recommendation.example.com",
+      "source": "https://github.com/dhruvipatel03/trainer-recommendation-system"
+    },
+    {
+      "title": "BookHub - Novel Management System",
+      "imageSrc": "projects/project.png",
+      "description": "A platform for managing and viewing novels with user authentication, book previews, and a seamless browsing experience.",
+      "skills": ["PHP", "MySQL", "JavaScript"],
+      "demo": "https://bookhub.example.com",
+      "source": "https://github.com/dhruvipatel03/novel-website"
+    },
+    {
+      "title": "Online Vegetable Shop",
+      "imageSrc": "projects/project.png",
+      "description": "A Flutter-based e-commerce app for buying fresh vegetables with real-time notifications, user authentication, and seamless UI.",
+      "skills": ["Flutter", "Dart", "Firebase", "Provider"],
+      "demo": "https://veggiecart.example.com",
+      "source": "https://github.com/yourusername/veggiecart"
+    }
+  ]

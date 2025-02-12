@@ -1,0 +1,152 @@
+@import "../../vars.css";
+
+/* Card Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing is even */
+  align-items: center;
+  border-radius: 15px;
+  background: var(--color-primary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 22px;
+  max-width: 360px;
+  min-height: 500px; /* Ensures minimum height */
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Image */
+.image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-light);
+  text-align: center;
+  flex-grow: 1; /* Makes sure the description expands properly */
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin: 12px 0;
+}
+
+.skill {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  color: var(--color-text);
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: var(--color-primary);
+}
+
+/* Links */
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #4a90e2, #0062cc);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+  background: linear-gradient(135deg, #0062cc, #003a80);
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 18px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .skill {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 7px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .skills {
+    gap: 6px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 6px 14px;
+    width: 80%;
+    text-align: center;
+  }
+}
